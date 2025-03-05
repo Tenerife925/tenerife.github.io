@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim | Tenerife Saugineta</title>
+    <style>
+        /* Reset e Variáveis */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2A5C82;
+            --secondary-color: #3D8BB8;
+            --accent-color: #FF6B6B;
+            --text-color: #333;
+            --bg-color: #F5F7FA;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .page-header h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        /* Seções */
+        .info-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .info-section:hover {
+            transform: translateY(-3px);
+        }
+
+        .section-title {
+            color: var(--secondary-color);
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .section-title svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        .info-item {
+            margin-bottom: 1.2rem;
+            padding-left: 1.5rem;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .info-item strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .highlight {
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .info-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="page-header">
+        <h1>Sobre Mim</h1>
+    </header>
+
+    <main>
+        <section class="info-section">
+            <h2 class="section-title">
+                <svg viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
+                Informações Pessoais
+            </h2>
+            <div class="info-item">
+                <strong>Nome Completo</strong>
+                Tenerife da Saugineta Bartolomeu Nhalicale
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2 class="section-title">
+                <svg viewBox="0 0 24 24"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3m6.82 6L12 12.72 5.18 9 12 5.28 18.82 9M17 16l-5 2.72L7 16v-3.73L12 15l5-2.73V16Z"/></svg>
+                Formação Acadêmica
+            </h2>
+            <div class="info-item">
+                <strong>Curso</strong>
+                Quarto Ano de Engenharia Hidráulica e Água Rural
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2 class="section-title">
+                <svg viewBox="0 0 24 24"><path d="M11 23v-2.5c-3.9-.5-6.5-3-7-7H2v-2h2.5c.5-3.9 3-6.5 7-7V2h2v2.5c3.9.5 6.5 3 7 7H22v2h-2.5c-.5 3.9-3 6.5-7 7V23h-2m1-17a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg>
+                Interesses Tecnológicos
+            </h2>
+            <div class="info-item">
+                <strong>Áreas de Atuação</strong>
+                <span class="highlight">Inteligência Artificial</span> com aplicação em soluções de engenharia
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2 class="section-title">
+                <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM10 4h4v2h-4V4zm10 16H4V8h16v12z"/></svg>
+                Projeto Atual
+            </h2>
+            <div class="info-item">
+                <strong>Descrição</strong>
+                Dimensionamento de bombas hidráulicas utilizando
+                <span class="highlight">IA</span> com stack tecnológica:
+                <ul style="margin-top: 0.5rem; list-style: none; padding-left: 1rem;">
+                    <li>• PySide6 (Interface gráfica)</li>
+                    <li>• Python (Lógica de negócio)</li>
+                    <li>• JavaScript (Visualizações interativas)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
